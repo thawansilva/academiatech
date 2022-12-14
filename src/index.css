@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .btn {
+    @apply inline-block my-2 uppercase bg-orange-500 py-3 px-6 rounded-md hover:bg-orange-600 ease-in font-semibold text-orange-50;
+  }
+  .btn-sec {
+    @apply inline-block border-[1px] border-gray-700 my-2 py-3 px-6 rounded-md text-gray-700 hover:bg-gray-700 hover:text-white ease-in;
+  }
+}
+@layer components {
+  .center-Element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
